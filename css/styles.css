@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 244, 244);
+    min-height: 100vh;
+    background-image: url(/img/pokemon-in-the-wild.webp);
+    background-repeat: no-repeat;
+    background-size: 200vh;
+}
+
+#pokemon-wrapper {
+    width: 450px;
+    height: 450px;
+    background-color: rgba(79, 70, 84, .75);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pokemon-wrapper img {
+    height: 250px;
+    width: 280px;
+}
+
+#pokemon-wrapper p {
+    margin-top: 1.8rem;
+    text-transform: uppercase;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding-left: .5rem;
+    background-color: white;
+    display: flex;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: block;
+    min-height: 100%;
+}
+
+form button {
+    border: none;
+    background-color: transparent;
+    margin: 0 auto;
+    padding-right: .6rem;
+    ;
+}
+
+form button img {
+    width: 20px;
+}
+
+.pokemon-name{
+    color: white;
+}
+
+#toast {
+    padding: 1rem;
+    width: 75vh;
+    margin: auto;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 110px;
+}
+
+#toast.escondido {
+    display: none;
+}
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(71, 70, 70, 0.74);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader img{
+    width: 400px;
+}
